@@ -1,3 +1,7 @@
+---
+import Sidebar from '../components/Sidebar.vue';
+---
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -8,7 +12,16 @@
     <title>前端老油条</title>
   </head>
   <body>
-    <slot />
+  <section class="flex flex-col w-full h-full items-center">
+      <div class="flex felx-col w-[70%]">
+          <div class="flex flex-col h-full left">
+              <Sidebar />
+          </div>
+          <div class="flex-1 flex justify-center h-full right mt-[1.5rem]">
+              <slot />
+          </div>
+      </div>
+  </section>
   </body>
 </html>
 
