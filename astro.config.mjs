@@ -6,5 +6,8 @@ import vue from '@astrojs/vue';
 
 // https://astro.build/config
 export default defineConfig({
+  redirects: {
+    '/': '/a'
+  },
   integrations: [UnoCSS(), vue()]
 });
